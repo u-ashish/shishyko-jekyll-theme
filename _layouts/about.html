@@ -1,26 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/assets/styles.css">
-
-<!-- Primary Meta Tags -->
-<title>Home · shishyko</title>
-<meta name="title" content="">
-<meta name="description" content="">
-<meta name="author" content="Ashish Uppala">
-<link rel="canonical" href="http://localhost:4000">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://localhost:4000">
-<meta property="og:title" content="Home">
-<meta property="og:description" content="">
-
+  {% include head.html %}
 </head>
-<body id="barba-wrapper" class="product">
+<body id="barba-wrapper" class="{{ page.class }}">
   <header role="banner">
     <a href="/" class="logo">
       <svg width="auto" height="60" viewBox="0 0 58 60" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -33,50 +16,6 @@
       <div><a href="/about">About</a></div>
     </nav>
   </header>
-  <main role="main">
-    <div id="barba-wrapper">
-  <main>
-    <h1>This is a theme for the main shishyko studio website!</h1>
-    <div class="productthumbs">
-      <div class="productthumb">
-        <a href="/product/hypergraphs">
-          <img src="/images/hypergraphs/thumbnail-hypergraphs.svg" alt="product thumbnail">
-          <div class="title-wrap">
-            Sample Idea 1
-            <span>Some subheading here</span>
-          </div>
-        </a>
-      </div>
-      <div class="productthumb">
-        <a href="/product/hypergraphs">
-          <img src="/images/hypergraphs/thumbnail-hypergraphs.svg" alt="product thumbnail">
-          <div class="title-wrap">
-            Sample Idea 2
-            <span>Some subheading here</span>
-          </div>
-        </a>
-      </div>
-      <div class="productthumb">
-        <a href="/product/hypergraphs">
-          <img src="/images/hypergraphs/thumbnail-hypergraphs.svg" alt="product thumbnail">
-          <div class="title-wrap">
-            Sample Idea 3
-            <span>Some subheading here</span>
-          </div>
-        </a>
-      </div>
-      <div class="productthumb">
-        <a href="/product/hypergraphs">
-          <img src="/images/hypergraphs/thumbnail-hypergraphs.svg" alt="product thumbnail">
-          <div class="title-wrap">
-            Sample Idea 4
-            <span>Some subheading here</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </main>
-</div>
-  </main>
+  {{ content }}
 </body>
 </html>

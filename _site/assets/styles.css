@@ -12,18 +12,6 @@ Variables
   --unit-font-large: 1.4rem;
 }
 
-
-/* -----------------------------------------------------------------------------
-Load fonts
------------------------------------------------------------------------------ */
-
-/* @font-face {
-  font-family: 'MierAWeb';
-  src:  url('/fonts/MierA-Regular.woff2') format('woff2'),
-        url('/fonts/MierA-Regular.woff') format('woff');
-} */
-
-
 /* -----------------------------------------------------------------------------
 Body and Layout
 ----------------------------------------------------------------------------- */
@@ -110,8 +98,6 @@ a {
 }
 
 a.action {
-  /* text-transform: lowercase;
-  font-feature-settings: "smcp"; */
   border: none;
 }
 
@@ -276,8 +262,6 @@ div.projectslabel {
 div.projectinfo ul {
   margin: var(--unit-line-height) 0 calc(2*var(--unit-line-height));
   opacity: 0.5;
-  /* text-transform: lowercase;
-  font-feature-settings: "smcp"; */
 }
 
 @media (min-width: 800px) {
@@ -291,8 +275,6 @@ div.projectinfo ul {
   div.projectinfo ul { grid-column: 2; grid-row: 2; margin: 0; }
   div.projectinfo div { grid-column: 3 / span 2; grid-row: 2; }
 }
-
-/* For label of project block at bottom of project contents */
 
 div.projectslabel h1 {
   margin:0;
@@ -422,8 +404,6 @@ cite.dark, cite.dark a {
     text-transform: uppercase;
     font-size: 90%;
     letter-spacing: 0.05em;
-    /* text-transform: lowercase;
-    font-feature-settings: "smcp"; */
   }
 
   figcaption.light {
